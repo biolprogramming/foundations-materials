@@ -1,6 +1,6 @@
-# Lecture 3
+# Lecture 02
 
-For lecture 2, we discussed a little bit about what the command line is and also what github is.  Learning more about github will be important to your success in the class, because it is the system that we will use during class (for examples) and also for submitting your homework.  Refer to the syllabi for the slides used during lecture.  
+For lecture 01, we discussed a little bit about what the command line is and how to go about running a your Codespace on Github.  Refer to the syllabus for the link to the slides used during lecture.  
 
 # In class exercises - command line
 
@@ -12,8 +12,8 @@ The command line is a very powerful tool for working with your computer.  Becaus
 
 When you type the command you should see something similar to the following:
 ```bash
-@brantfaircloth ➜ /workspaces/0-lectures-brantfaircloth-1 (main) $ ls
-LICENSE  'Lecture 1.md'  'Lecture 2.md'   README.md
+@brantfaircloth ➜ /workspaces/foundations-codespace (main) $ ls
+LICENSE  README.md  img  requirements.txt
 ```
 This basically shows the files that exist in what is known as our "working directory".  This is a "directory" or "folder" that is nested within the hierarchy of folders that we discussed.
 
@@ -23,10 +23,10 @@ ls -l
 ```
 And, when you do that, you will see something like the following, which shows some of the same information as above, but is a bit more involved.  Now for each file, there is additional information listed.  That information breaks down into the file permissions, the file owner, the group the file is in, the size of the file, the time it was modified, and it's name.
 ```bash
--rw-rw-rw- 1 codespace root      1511 Aug 26 15:00  LICENSE
--rw-rw-rw- 1 codespace codespace  128 Aug 26 15:22 'Lecture 1.md'
--rw-rw-rw- 1 codespace codespace 1692 Aug 26 15:39 'Lecture 2.md'
--rw-rw-rw- 1 codespace root       278 Aug 26 15:00  README.md
+-rw-rw-rw-  1 vscode root 1081 Aug 18 18:30 LICENSE
+-rw-rw-rw-  1 vscode root  592 Aug 18 18:30 README.md
+drwxrwxrwx+ 2 vscode root 4096 Aug 18 18:30 img
+-rw-rw-rw-  1 vscode root   80 Aug 18 18:30 requirements.txt
 ```
 File permissions are complicated, and we're not going to spend a lot of time on then.  For every file in linux, there is a "file owner".  "File owners" can also belong to "groups".  Both file owners and groups have "permissions" that specify what they can and cannot do with a file.  Permissions generally come in groups of three, so the above breaks up into:
 ```bash
@@ -40,10 +40,10 @@ ls -lh
 ```
 We get the "long directory listing" (`-l`) and we get the file sizes in "human readable" (`-h`) form, like so:
 ```bash
--rw-rw-rw- 1 codespace root      1.5K Aug 26 15:00  LICENSE
--rw-rw-rw- 1 codespace codespace  128 Aug 26 15:22 'Lecture 1.md'
--rw-rw-rw- 1 codespace codespace 6.6K Aug 26 16:33 'Lecture 2.md'
--rw-rw-rw- 1 codespace root       278 Aug 26 15:00  README.md
+-rw-rw-rw-  1 vscode root 1.1K Aug 18 18:30 LICENSE
+-rw-rw-rw-  1 vscode root  592 Aug 18 18:30 README.md
+drwxrwxrwx+ 2 vscode root 4.0K Aug 18 18:30 img
+-rw-rw-rw-  1 vscode root   80 Aug 18 18:30 requirements.txt
 ```
 
 ## pwd
@@ -54,7 +54,7 @@ pwd
 ```
 When you do, you should see that it shows something similar to:
 ```bash
-/workspaces/0-lectures-brantfaircloth-1
+/workspaces/foundations-codespace
 ```
 This is what is known as the "path" to where the files we are looking at are located. Notice, that in the terminal below, the path output by `pwd` is in your header line of the terminal, which is pretty helpful because it shows you where you are located on the filesystem at all times.
 
@@ -66,7 +66,7 @@ cd /
 ```
 Where does this take us?  How do we get back to where we just were? Well, we can get back two ways.  First, `cd /` puts us at the "root" of the filesystem (we discussed this).  We want to move back to the directories we were working in.  So, one thing we could do is type:
 ```bash
-cd /workspaces/0-lectures-brantfaircloth-1
+cd /workspaces/foundations-codespace
 ```
 And, we're right back where we started.  Now, let me show you a shortcut.  First, go back to the root directory:
 ```bash
@@ -76,7 +76,7 @@ Now, to navigate back to the last place we were located, we can type:
 ```bash
 cd -
 ```
-And this brings us right back.  Try it! Now, `cd` can take arguments that include a path to some location (e.g. like `/workspaces/0-lectures-brantfaircloth-1`, above).  These are known as "absolute paths"
+And this brings us right back.  Try it! Now, `cd` can take arguments that include a path to some location (e.g. like `/workspaces/foundations-codespace`, above).  These are known as "absolute paths"
 because they contain every step of the process to get to a location on the operating system.  There are also what are known as "relative paths" and these tend to confuse people.  A relative path consists of a series of dots, so:
 ```bash
 cd ../
@@ -85,17 +85,17 @@ Means "go UP (closer to root) one directory from where I'm currently located".  
 ```bash
 cd ../
 ```
-Notice that now, instead of being in `/workspaces/0-lectures-brantfaircloth-1` we have moved up one level to `/workspaces/`.  We can go back by typing the entire path to where we want to go or by using `cd -`.  Do that now:
+Notice that now, instead of being in `/workspaces/foundations-codespace` we have moved up one level to `/workspaces/`.  We can go back by typing the entire path to where we want to go or by using `cd -`.  Do that now:
 ```bash
 cd -
 ```
-And, notice that we're back in `/workspaces/0-lectures-brantfaircloth-1`.  Relative paths are pretty handy because if we want to go up TWO levels in the directory hierarchy, we can run:
+And, notice that we're back in `/workspaces/foundations-codespace`.  Relative paths are pretty handy because if we want to go up TWO levels in the directory hierarchy, we can run:
 ```bash
 cd ../../
 ```
 Do that now, and see where you end up... This should take you up *two levels* to `/`.  Again, we can get back to where we started using `cd -` or by entering the path to the location we want to go:
 ```bash
-cd /workspaces/0-lectures-brantfaircloth-1
+cd /workspaces/foundations-codespace
 ```
 You will likely need to navigate around on the command-line at some point, so known how `cd` and relative and absolutely paths work is very helpful.  It will take a little bit of practice to get used to.
 
@@ -105,17 +105,17 @@ Sometimes, we want to create things on the command-line.  One thing we might wan
 ```bash
 mkdir TMP
 ```
-Now, let's look to see if we actualyl made it:
+Now, let's look to see if we actually made it:
 ```bash
 ls -lh
 ```
 If we look closely at this ouput, we'll see something like:
 ```bash
--rw-rw-rw-  1 codespace root      1.5K Aug 26 15:00  LICENSE
--rw-rw-rw-  1 codespace codespace  128 Aug 26 15:22 'Lecture 1.md'
--rw-rw-rw-  1 codespace codespace 7.2K Aug 26 16:37 'Lecture 2.md'
--rw-rw-rw-  1 codespace root       278 Aug 26 15:00  README.md
-drwxrwxrwx+ 2 codespace codespace 4.0K Aug 26 16:38  TMP
+-rw-rw-rw-  1 vscode root 1.1K Aug 18 18:30 LICENSE
+-rw-rw-rw-  1 vscode root  592 Aug 18 18:30 README.md
+drwxrwxrwx+ 2 vscode root 4.0K Aug 18 18:30 img
+-rw-rw-rw-  1 vscode root   80 Aug 18 18:30 requirements.txt
+drwxrwxrwx+ 2 vscode vscode 4.0K Aug 26 16:38  TMP
 ```
 Which shows the new directory we just created. Notice that it has `rw` permissions, but also `x`, which stands for "execute" and means that the owner, a member of the group, or anyone can enter the `TMP` directory.
 
@@ -129,7 +129,7 @@ pwd
 ```
 Notice that `pwd` provides the following path:
 ```bash
-/workspaces/0-lectures-brantfaircloth-1/TMP
+/workspaces/foundations-codespace/TMP
 ```
 And it shows that we have navigated to this directory.
 
@@ -155,7 +155,7 @@ ls -lh
 ```
 The results should look like:
 ```bash
--rw-rw-rw- 1 codespace codespace 21 Aug 26 16:45 test.txt
+-rw-rw-rw- 1 vscode vscode 4.0K Aug 26 16:38 test.txt
 ```
 
 ## cat
