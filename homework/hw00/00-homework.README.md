@@ -34,6 +34,6 @@ Remember to **follow instructions**.  See the [RUBRIC.md](RUBRIC.md) for scoring
 All answer files should be uploaded to Moodle.
 
 1. Upload a screenshot of the github repository that we created during class to Moodle. It will look like the following:
-  ![Screenshot of my github class repository](/img/repo.png "")
+  ![Screenshot of my github class repository](img/repo.png "")
 2. Upload a screenshot of **your** codespace running in the cloud. It will look like the following:
-  ![Screenshot of my running codespace](/img/codespace.png "")
+  ![Screenshot of my running codespace](img/codespace.png "")
