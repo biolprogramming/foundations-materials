@@ -1,5 +1,5 @@
 # Foundations of Computing for Biologists (BIOL2601/7800)
-## Homework 0
+## Homework 00
 
 ## Assistance
 * Instructor: Brant Faircloth (brant@lsu.edu)
