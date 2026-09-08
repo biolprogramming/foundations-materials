@@ -213,7 +213,7 @@ This will also get rid of what you delete FOREVER, so be careful.  It's always g
 
 When working on the command-line, you sometimes need to download files from somewhere to wherever you are working.  This can be pretty hard without a graphical interface, and that's where `wget` comes in. Although there are several programs that can get files from the internet, `wget` is one of the easiest to use.  Let's say we want to download a file from the Syllabus repository for this class.  First, we need to find the link to that file (usually, on another computer, go to the file online, right-click, and select "Copy link").  With the link copied, we can download the file like so:
 ```bash
-wget https://raw.githubusercontent.com/biolprogramming/found-syllabus/main/LICENSE
+wget https://raw.githubusercontent.com/biolprogramming/foundations-syllabus/refs/heads/main/LICENSE
 ```
 This will download the `LICENSE` file from the listed URL to our working directory.  Do it now.  Notice that we already HAD a LICENSE file, so `wget` has named the new file LICENSE.1.  Let's delete that file:
 ```bash
@@ -221,7 +221,7 @@ rm LICENSE.1
 ```
 Now, let's download the same file and give it whatever name we like (notice that this is `-O` (capital O for "Output")):
 ```bash
-wget -O name-that-I-like.txt https://raw.githubusercontent.com/biolprogramming/found-syllabus/main/LICENSE
+wget -O name-that-I-like.txt https://raw.githubusercontent.com/biolprogramming/foundations-syllabus/refs/heads/main/LICENSE
 ```
 You can use `less` to take a look at that file.  Then go ahead and delete it:
 ```bash
