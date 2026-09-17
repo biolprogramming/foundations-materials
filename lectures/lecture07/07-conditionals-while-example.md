@@ -87,6 +87,7 @@ while [ $i -lt 50 ]; do
   i=$(( $i+1 ))
 done
 ```
+
 And we can do our even/odd computation the same way
 ```bash
 i=0
