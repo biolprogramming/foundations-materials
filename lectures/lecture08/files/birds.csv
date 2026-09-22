@@ -1,0 +1,13 @@
+sample_id	species	sex	site	mass_g	wing_mm	tarsus_mm	plumage	sample
+MAN001	Manacus_manacus	M	Panama	16.2	52.1	20.3	white	DNA
+MAN002	Manacus_manacus	F	Panama	17.8	53.4	20.9	olive	DNA
+MAN003	Manacus_manacus	M	Panama	15.9	51.8	19.8	white	DNA
+MAN004	Manacus_vitellinus	M	Panama	16.5	52.9	20.1	yellow	DNA
+MAN005	Manacus_vitellinus	F	Panama	18.1	54	21.2	olive	DNA
+MAN006	Manacus_vitellinus	M	Colombia	NA	52.5	20	yellow	DNA
+MAN007	Manacus_manacus	F	Colombia	17.2	53.1	20.7	Olive	DNA
+COL001	Colinus_virginianus	M	Louisiana	172.4	112.3	31.5	brown	DNA
+COL002	Colinus_virginianus	F	Louisiana	168.9	110.8	30.9	brown	DNA
+COL003	Colinus_virginianus	M	Texas	181	114.1	32.2	brown	DNA
+COL004	Colinus_virginianus	F	Texas	NA	111.5	31	Brown	DNA
+COL005	Colinus_virginianus	M	Louisiana	175.3	113	31.8	brown	DNA

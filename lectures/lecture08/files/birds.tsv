@@ -1,0 +1,13 @@
+sample_id	species	sex	site	mass_g	wing_mm	tarsus_mm	plumage
+MAN001	Manacus_manacus	M	Panama	16.2	52.1	20.3	white
+MAN002	Manacus_manacus	F	Panama	17.8	53.4	20.9	olive
+MAN003	Manacus_manacus	M	Panama	15.9	51.8	19.8	white
+MAN004	Manacus_vitellinus	M	Panama	16.5	52.9	20.1	yellow
+MAN005	Manacus_vitellinus	F	Panama	18.1	54.0	21.2	olive
+MAN006	Manacus_vitellinus	M	Colombia	NA	52.5	20.0	yellow
+MAN007	Manacus_manacus	F	Colombia	17.2	53.1	20.7	Olive
+COL001	Colinus_virginianus	M	Louisiana	172.4	112.3	31.5	brown
+COL002	Colinus_virginianus	F	Louisiana	168.9	110.8	30.9	brown
+COL003	Colinus_virginianus	M	Texas	181.0	114.1	32.2	brown
+COL004	Colinus_virginianus	F	Texas	NA	111.5	31.0	Brown
+COL005	Colinus_virginianus	M	Louisiana	175.3	113.0	31.8	brown
