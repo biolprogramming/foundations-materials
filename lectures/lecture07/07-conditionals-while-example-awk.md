@@ -164,7 +164,7 @@ As well as the same as:
 ```bash
 cat files/birds.tsv | awk '{print $1, $2}'
 ```
-What is we want columns 1 and 3?
+What if we want columns 1 and 3?
 ```bash
 awk '{print $1, $3}' files/birds.tsv
 ```
