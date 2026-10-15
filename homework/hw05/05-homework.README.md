@@ -29,11 +29,6 @@ course-get homework 0       # pull homework 00 into homework/hw00/
 
 # Assignment
 
-Remember to follow instructions. See the RUBRIC.md for scoring (and deductions). This includes deductions for not following the rules.
-
-
-# Assignment
-
 Remember to follow instructions. See the [RUBRIC.md](RUBRIC.md) for scoring (and deductions). This includes deductions for not following the rules.
 
 You've been given `variants.tsv` which is in the `./data` directory and which is a tab-separated table of 2000 [single-nucleotide variants](https://en.wikipedia.org/wiki/Single-nucleotide_polymorphism) or "SNP calls" that have been identified across a population of Northern Bobwhites ([_Colinus virginianus_](https://en.wikipedia.org/wiki/Northern_bobwhite)). Columns in `variants.tsv` are: 1. `chrom`, 2. `pos`, 3. `ref`, 4. `alt`, 5. `qual`, 6. `depth`, 7. `maf`, 8. `gene`, 9. `effect`. These columns correspond to: (1) the chromosome on which the variant is found, (2) the position on that chromosome of the variant (in base pairs), (3) one of the two alleles, (4) the other of the two alleles, (5) a quality score, where higher numbers are better, (6) the depth of sequencing reads supporting this variant site, (7) the [frequency of the minor allele](https://en.wikipedia.org/wiki/Minor_allele_frequency) at this site, (8) the gene in which the variant was located (if it was located in a gene), and (9) the effect of the variant.
