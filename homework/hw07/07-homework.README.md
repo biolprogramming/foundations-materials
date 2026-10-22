@@ -68,4 +68,4 @@ if __name__ == "__main__":
 
     You may not use `math.e` in any way (e.g. you **MUST** compute _e_).
 
-    You do not need to use recursion, although you can if you would like to confused yourself.
+    You do not need to use recursion, although you can if you would like to confuse yourself.
