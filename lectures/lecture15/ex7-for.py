@@ -1,0 +1,14 @@
+#!/usr/bin/env python
+
+
+def main():
+    # here is an example of 'for'
+    for n in [1,2,3,4]:
+        if n == 2:
+            break
+        else:
+            print(n)
+
+
+if __name__ == "__main__":
+    main()
